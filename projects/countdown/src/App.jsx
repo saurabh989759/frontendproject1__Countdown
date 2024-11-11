@@ -1,5 +1,6 @@
 import { useEffect, useReducer } from "react";
 import QUIZ_DATA from "./data/questions.json"
+import Question from "./components/Question";
 
 const initialState ={
   questions :[] , 
@@ -27,13 +28,7 @@ function App() {
   }, [])
   return (
   <div>Hello recact interview questions 
-      <ul>
-        {
-          questions.map((question , index) => {
-            return <li>{question.question}</li>
-          })
-        }
-      </ul>
+    { status=== 'ready' &&   <Question question = {questions[index]  index = {index} answer ={answer} dispatch = {dispatch}} />}
   </div>
 
 )
