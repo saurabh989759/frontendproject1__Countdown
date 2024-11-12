@@ -28,7 +28,7 @@ function App() {
   }, [])
   return (
   <div>Hello recact interview questions 
-    { status=== 'ready' &&   <Question question = {questions[index]  index = {index} answer ={answer} dispatch = {dispatch}} />}
+    { status=== 'ready' &&   <Question question = {questions[index]}  index= {index} answer ={answer} dispatch = {dispatch} />}
   </div>
 
 )
