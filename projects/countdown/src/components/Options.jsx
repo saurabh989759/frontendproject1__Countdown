@@ -7,7 +7,7 @@ export default Options (question, answer ,  dispatch){
         {
             question.options.map((option , index) => {
                 return (
-                    
+                    "new changes"
                 )
             })
         }
