@@ -18,6 +18,11 @@ const reducer = (state , action) => {
         questions : action.payload ,
         status :'ready'
       }
+      case 'newAnswer' : 
+      return {
+        ...state , 
+        answer : action.payload 
+      }
     }
 }
 function App() {
