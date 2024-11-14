@@ -3,4 +3,5 @@
 }
 .wrong{
     background: red;
+    visibility: hidden;
 }

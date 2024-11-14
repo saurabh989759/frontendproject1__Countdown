@@ -1,5 +1,6 @@
 import React from "react";
 import Question from "./Question";
+import "./Options.css";
 export default function Options ({question, answer ,  dispatch}){
     const hasAnswered = answer !== null ;
     return (
@@ -11,7 +12,7 @@ export default function Options ({question, answer ,  dispatch}){
                         className= {
                             `${
                                 hasAnswered ?
-                                answer === question.correctOption ? "correct" : "false" : null}`   }
+                                index === question.correctOption ? "correct" : "wrong" : ""}`   }
                         onClick={() => {dispatch({type : "newAnswer" , payload : index})}}
                         >
                       {option}
