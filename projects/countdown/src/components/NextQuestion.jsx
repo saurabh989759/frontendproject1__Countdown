@@ -5,4 +5,3 @@ const NextQuestion = () => {
   )
 }
 
-export default NextQuestion
